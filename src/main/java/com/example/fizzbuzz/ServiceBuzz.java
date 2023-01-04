@@ -13,13 +13,14 @@ public class ServiceBuzz {
         ArrayList<Integer> fizzBuzzValues = new ArrayList<Integer>();
 
         ArrayList<String> result = new ArrayList<String>();
+        //we should also consider the case when the number is negativ
         if (number < 0) {
-            for (int i = 0; i >= number; i--) {
+            for (int i = 1; i >= number; i--) {
                 fizzBuzzValues.add(i);
             }
         } else {
 
-            for (int i = 0; i <= number; i++) {
+            for (int i = 1; i <= number; i++) {
                 fizzBuzzValues.add(i);
             }
         }
